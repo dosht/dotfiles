@@ -1,3 +1,8 @@
+# Dependencies
+1. vim
+2. tmux
+3. apache spark
+
 # Installation
 
 ```bash
