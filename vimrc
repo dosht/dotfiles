@@ -78,9 +78,10 @@ map <C-n> :NERDTreeToggle<CR>
 let g:sparkShellPath = "$SPARK_HOME/bin/spark-shell"
 let g:inTmux = 1
 let g:pysparkMode = 0
+command StartSpark execute 'call StartSparkShell("")'
 map <startMap>                  :call StartSparkShell("")<CR>
 map <enter paste>               :call SparkShellEnterPasteEnv()<CR>
-map <sendLine(s)Map>            :call SparkShellSendMultiLine() <CR>
+map <F5>                        :call SparkShellSendMultiLine() <CR>
 map <sendAll>                   :silent 1,$ call SparkShellSendMultiLine() <CR>
 
 nmap <exit paste>               :call SparkShellExitPasteEnv()<CR>
