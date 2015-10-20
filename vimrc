@@ -81,7 +81,7 @@ let g:pysparkMode = 0
 command StartSpark execute 'call StartSparkShell("")'
 map <startMap>                  :call StartSparkShell("")<CR>
 map <enter paste>               :call SparkShellEnterPasteEnv()<CR>
-map <F5>                        :call SparkShellSendMultiLine() <CR>
+map <C-p>                       :call SparkShellSendMultiLine() <CR>
 map <sendAll>                   :silent 1,$ call SparkShellSendMultiLine() <CR>
 
 nmap <exit paste>               :call SparkShellExitPasteEnv()<CR>
