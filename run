@@ -1,0 +1,6 @@
+#!/bin/sh
+set -x -e 
+compiler=$1
+file=$2
+$compiler $file.cu -o $file
+./$file
