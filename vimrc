@@ -82,6 +82,7 @@ command StartSpark execute 'call StartSparkShell("")'
 map <startMap>                  :call StartSparkShell("")<CR>
 map <enter paste>               :call SparkShellEnterPasteEnv()<CR>
 map <C-p>                       :call SparkShellSendMultiLine() <CR>
+imap <C-p>                      <ESC> :call SparkShellSendMultiLine() <CR>
 map <sendAll>                   :silent 1,$ call SparkShellSendMultiLine() <CR>
 
 nmap <exit paste>               :call SparkShellExitPasteEnv()<CR>
