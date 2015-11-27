@@ -42,6 +42,8 @@ set autoread
 "let autoreadargs={'autoread':1}
 "execute WatchForChanges("*",autoreadargs)
 set noswapfile
+"add Ctrl+c to copy to system clipboard
+vnoremap <C-c> "+y
 
 " =============== Search Settings ==============
 set hlsearch    "Find next on typing
@@ -52,14 +54,17 @@ set ic
 set ai
 set si
 set smarttab
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
+autocmd Filetype scala setlocal ts=2 sts=2 sw=2
 autocmd Filetype java setlocal ts=4 sts=4 sw=4
 autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
 autocmd Filetype python setlocal ts=4 sts=4 sw=4
-autocmd Filetype scala setlocal ts=2 sts=2 sw=2
+autocmd Filetype cpp setlocal ts=4 sts=4 sw=4
+autocmd Filetype c setlocal ts=4 sts=4 sw=4
+autocmd Filetype cu setlocal ts=4 sts=4 sw=4
 
 " Display tabs and trailing spaces visually
 set list listchars=tab:\ \ ,trail:·

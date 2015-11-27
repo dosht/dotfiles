@@ -1,7 +1,16 @@
 #!/bin/sh
+set -x
 
-file=$1
-while inotifywait --exclude /.*swp$ -e modify -e create -e delete .; do
-    $file
+cmd=$1
+if [ $2 ]
+then
+    path=$2
+else
+    path=`pwd`
+fi
+
+$cmd
+while inotifywait --exclude /.*swp$ -e modify -e create -e delete $path; do
+    $cmd
 done
 

@@ -2,5 +2,6 @@
 set -x -e 
 compiler=$1
 file=$2
+pwd=`pwd`
 $compiler $file.cu -o $file
-./$file
+$pwd/$file
