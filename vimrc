@@ -22,6 +22,8 @@ NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'benmills/vimux'
 NeoBundle 'tpope/vim-tbone'
 NeoBundle 'tcarette/vim-sparkShell'
+NeoBundle 'xuhdev/SingleCompile'
+NeoBundle 'jistr/vim-nerdtree-tabs'
 
 call neobundle#end()
 
