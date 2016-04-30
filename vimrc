@@ -24,6 +24,7 @@ NeoBundle 'tpope/vim-tbone'
 NeoBundle 'tcarette/vim-sparkShell'
 NeoBundle 'xuhdev/SingleCompile'
 NeoBundle 'jistr/vim-nerdtree-tabs'
+NeoBundle 'ekalinin/Dockerfile.vim'
 
 call neobundle#end()
 
