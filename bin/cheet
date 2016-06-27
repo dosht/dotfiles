@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cat << EOF
+netstat -atp tcp | grep -i "listen"
+lsof -n -i | grep LISTEN
+lsof -n -i4TCP:9009 | grep LISTEN
+docker stop \$(docker ps -a -q)
+docker rm \$(docker ps -a -q)
+screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty
+EOF
+
