@@ -92,3 +92,6 @@ export PATH=$CONDA_DIR/bin:$PATH
 
 alias hf="git hf"
 
+export GOPATH=$HOME/gopath
+export PATH=$GOPATH/bin:$PATH
+
