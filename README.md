@@ -2,6 +2,8 @@
 1. vim
 2. tmux
 3. apache spark
+4. cmake
+5. python-dev [for ubuntu]
 
 # Installation
 
