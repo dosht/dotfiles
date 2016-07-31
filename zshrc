@@ -94,4 +94,5 @@ alias hf="git hf"
 
 export GOPATH=$HOME/gopath
 export PATH=$GOPATH/bin:$PATH
+export PATH=~/bin/:$PATH
 

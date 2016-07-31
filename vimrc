@@ -25,6 +25,10 @@ NeoBundle 'tcarette/vim-sparkShell'
 NeoBundle 'xuhdev/SingleCompile'
 NeoBundle 'jistr/vim-nerdtree-tabs'
 NeoBundle 'ekalinin/Dockerfile.vim'
+NeoBundle 'octol/vim-cpp-enhanced-highlight' " Sytax Check
+NeoBundle 'scrooloose/syntastic' " C++
+NeoBundle 'L9'
+NeoBundle 'ctrlpvim/ctrlp.vim' " Fuzzy file search
 
 call neobundle#end()
 
@@ -90,8 +94,8 @@ let g:pysparkMode = 0
 command StartSpark execute 'call StartSparkShell("")'
 map <startMap>                  :call StartSparkShell("")<CR>
 map <enter paste>               :call SparkShellEnterPasteEnv()<CR>
-map <C-p>                       :call SparkShellSendMultiLine() <CR>
-imap <C-p>                      <ESC> :call SparkShellSendMultiLine() <CR>
+"map <C-p>                       :call SparkShellSendMultiLine() <CR>
+"imap <C-p>                      <ESC> :call SparkShellSendMultiLine() <CR>
 map <sendAll>                   :silent 1,$ call SparkShellSendMultiLine() <CR>
 
 nmap <exit paste>               :call SparkShellExitPasteEnv()<CR>
