@@ -52,6 +52,7 @@ set autoread
 set noswapfile
 "add Ctrl+c to copy to system clipboard
 vnoremap <C-c> "+y
+colorscheme slate
 
 " =============== Search Settings ==============
 set hlsearch    "Find next on typing
