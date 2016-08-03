@@ -38,3 +38,4 @@
 	default = matching
 [core]
 	editor = vim
+	excludesfile = /Users/mostafaabdulhamid/.gitignore_global
