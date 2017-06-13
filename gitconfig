@@ -34,7 +34,10 @@
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   ls = ls-files
   glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
 [push]
+	default = current
+[pull]
 	default = current
 [core]
 	editor = vim
