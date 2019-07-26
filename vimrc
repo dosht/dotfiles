@@ -15,9 +15,7 @@ if system('uname -o') =~ '^GNU/'
 endif
 
 " >>>> plugins:
-NeoBundle 'Shougo/vimproc.vim', {'build': {'unix': g:make}}
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'benmills/vimux'
 NeoBundle 'tpope/vim-tbone'

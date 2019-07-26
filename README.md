@@ -8,6 +8,8 @@
 # Installation
 
 ```bash
+cd Documents
+git clone git@github.com:dosht/dotfiles.git
 ./install
 ```
 
